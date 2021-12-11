@@ -8,6 +8,7 @@
 *.pyc
 *.log
 .DS_Store
+*.deb
 
 build/
 cmake-build-debug/
