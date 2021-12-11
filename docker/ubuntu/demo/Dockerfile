@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 
 VOLUME /data
 COPY sources.list /etc/apt/sources.list
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 #RUN apt-get update \
 #    && apt install -y \
@@ -12,10 +13,14 @@ COPY sources.list /etc/apt/sources.list
 RUN  apt-get update \
     && apt install -y sudo \
     && useradd --create-home --no-log-init --shell /bin/bash trunk \
-    && adduser trunk sudo && echo "trunk:123" | chpasswd
+    && adduser trunk sudo && echo "trunk:123" | chpasswd && echo "root:123" | chpasswd \
+    && usermod -u 1000 trunk && usermod -G 1000 trunk \
+    && sudo chmod 777 /usr/local/bin/docker-entrypoint.sh
 
 USER trunk
-WORKDIR /home/trunk
+WORKDIR /home/trunk/
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 
 
