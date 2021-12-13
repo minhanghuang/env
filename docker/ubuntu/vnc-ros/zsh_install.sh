@@ -188,8 +188,9 @@ EOF
   # Prompt for user choice on changing the default login shell
   printf '%sDo you want to change your default shell to zsh? [Y/n]%s ' \
     "$YELLOW" "$RESET"
-  read -r opt
-#  opt="y"
+#  read -r opt
+  opt="y"
+  echo "-----------> $opt"
   case $opt in
     y*|Y*|"") echo "Changing the shell..." ;;
     n*|N*) echo "Shell change skipped."; return ;;
