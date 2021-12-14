@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:demo
 
 COPY sources.list /etc/apt/sources.list
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

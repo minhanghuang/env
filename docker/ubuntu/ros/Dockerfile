@@ -1,34 +1,14 @@
-FROM ros:kinetic
+FROM ubuntu:base
 
-#VOLUME /data
-COPY sources.list /etc/apt/sources.list
-COPY sshd_config /etc/ssh/sshd_config
-COPY zsh_install.sh /opt/dockerfile/zsh_install.sh
-COPY plugins_install.sh /opt/dockerfile/plugins_install.sh
+COPY ros-latest.list /etc/apt/sources.list.d/ros-latest.list
 COPY requirements.txt /opt/dockerfile/requirements.txt
-COPY pip.conf /opt/dockerfile/pip.conf
-COPY docker-entrypoint.sh /opt/dockerfile/docker-entrypoint.sh
 
-ARG user=trunk
-
-RUN apt-get update \
-    && apt install -y \
-        libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping \
-        build-essential supervisor htop glances ntpdate chrony libtool \
-        python-pip python3-pip curl unzip wget \
-        zsh git vim sudo openssh-server \
+RUN apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 \
+    && apt-get update \
+    && apt install ros-kinetic-desktop-full -y \
     && rm -rf /var/lib/apt/lists/* \
-    && useradd --create-home --no-log-init --shell /bin/zsh ${user} \
-    && adduser ${user} sudo && echo "${user}:123" | chpasswd && echo "root:123" | chpasswd \
-    && sudo chmod 777 /opt/dockerfile/docker-entrypoint.sh \
-    && su - ${user} -c "sh /opt/dockerfile/zsh_install.sh" \
-    && su - ${user} -c "sh /opt/dockerfile/plugins_install.sh" \
     && su - ${user} -c "pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /opt/dockerfile/requirements.txt"
 
-USER ${user}
-WORKDIR /home/${user}/
-
-ENTRYPOINT ["/opt/dockerfile/docker-entrypoint.sh"]
 
 
 
