@@ -1,0 +1,5 @@
+PyYAML==6.0
+rospkg==1.2.8
+catkin-tools==0.6.1
+protobuf==3.13.0
+tornado==5.1.1
