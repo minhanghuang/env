@@ -9,7 +9,7 @@ ARG user=trunk
 
 RUN apt-get update \
     && apt install -y \
-        libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping \
+        libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools \
         build-essential supervisor htop ntpdate chrony libtool \
         python-pip python3-pip curl unzip wget \
         zsh git vim sudo \
