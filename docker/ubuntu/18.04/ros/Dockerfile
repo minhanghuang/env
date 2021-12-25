@@ -1,4 +1,7 @@
-FROM ubuntu18:base
+FROM ubuntu:bionic
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
 
 COPY ros-latest.list /etc/apt/sources.list.d/ros-latest.list
 COPY requirements.txt /opt/dockerfile/requirements.txt
