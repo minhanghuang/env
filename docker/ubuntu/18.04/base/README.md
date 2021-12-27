@@ -8,8 +8,8 @@
 ## 使用
 
 ```shell script
-docker build -t ubuntu18:base .
-docker run -itd -p 6789:22 --name=base ubuntu18:base
+docker build -t ubuntu:bionic .
+docker run -itd -p 6789:22 --name=base ubuntu:bionic
 ssh trunk@127.0.0.1 -p 6789
 ```
 
