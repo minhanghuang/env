@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt install -y \
         libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools\
         build-essential supervisor htop glances ntpdate chrony libtool \
-        python-pip python3-pip curl unzip wget \
+        python-pip python3-pip curl unzip wget python-catkin-tools \
         zsh git vim sudo openssh-server \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --create-home --no-log-init --shell /bin/zsh ${user} \
