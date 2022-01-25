@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt install -y \
         gnupg2 libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools \
         build-essential supervisor htop ntpdate chrony libtool \
-        python-pip python3-pip curl unzip wget python-catkin-tools \
+        python-pip python3-pip curl unzip wget \
         zsh git vim sudo \
         openssh-server \
     && rm -rf /var/lib/apt/lists/* \
