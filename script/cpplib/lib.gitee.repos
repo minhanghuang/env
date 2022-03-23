@@ -1,0 +1,34 @@
+repositories:
+  haha-web/googletest:
+    type: git
+    url: git@gitee.com:haha-web/googletest.git
+    version: master
+  haha-web/gflags:
+    type: git
+    url: git@gitee.com:haha-web/gflags.git
+    version: master
+  haha-web/glog:
+    type: git
+    url: git@gitee.com:haha-web/glog.git
+    version: master
+  haha-web/civetweb:
+    type: git
+    url: git@gitee.com:haha-web/civetweb.git
+    version: master
+  haha-web/jsoncpp:
+    type: git
+    url: git@gitee.com:haha-web/jsoncpp.git
+    version: master
+  haha-web/nlohmannjson:
+    type: git
+    url: git@gitee.com:haha-web/nlohmannjson.git
+    version: master
+  haha-web/spdlog:
+    type: git
+    url: git@gitee.com:haha-web/spdlog.git
+    version: v1.9.2
+  haha-web/yaml-cpp:
+    type: git
+    url: git@gitee.com:haha-web/yaml-cpp.git
+    version: yaml-cpp-0.6.3
+
