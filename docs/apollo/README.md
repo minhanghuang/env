@@ -30,7 +30,7 @@ sudo systemctl restart docker
 
 ```shell
 # 下载
-https://github.com/Coxhuang/env/tree/main/apollo/apollo_v6.0_edu_amd64.tar.gz
+https://github.com/haha-web/env/tree/main/apollo/apollo_v6.0_edu_amd64.tar.gz
 
 # 或者到Apollo官网下载
 https://apollo.auto/document_cn.html?target=/Apollo-Homepage-Document/Apollo_Doc_CN_6_0/
