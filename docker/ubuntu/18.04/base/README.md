@@ -9,11 +9,11 @@
 
 ```shell script
 docker build -t ubuntu:bionic .
-docker run -itd -p 6789:22 --name=base ubuntu:bionic
+docker run -itd -p 6789:22 -p 9090:9090 -p 9990:9990 -p 9991:9991 -p 9992:9992 --name=base ubuntu:bionic
 ssh trunk@127.0.0.1 -p 6789
 ```
 
 
 ```shell script
-sudo passwd # 修改root密码 
+sudo passwd # 修改root密码
 ```

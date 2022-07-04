@@ -1,0 +1,6 @@
+[submodule "cpplib/gflags"]
+	path = cpplib/gflags
+	url = git@gitee.com:haha-web/gflags.git
+[submodule "cpplib/googletest"]
+	path = cpplib/googletest
+	url = git@gitee.com:haha-web/googletest.git

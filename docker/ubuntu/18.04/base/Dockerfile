@@ -3,13 +3,14 @@ FROM ubuntu:18.04
 COPY sources.list /etc/apt/sources.list
 COPY oh-my-zsh-install.sh /opt/dockerfile/oh-my-zsh-install.sh
 COPY oh-my-zsh-plugin-install.sh /opt/dockerfile/oh-my-zsh-plugin-install.sh
+COPY requirements.txt /opt/dockerfile/requirements.txt
 
 ARG user=trunk
 
 RUN apt-get update \
     && apt install -y \
         libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools \
-        build-essential supervisor htop ntpdate chrony libtool \
+        build-essential supervisor htop ntpdate chrony libtool clang llvm tig libunwind-dev \
         python-pip python3-pip curl unzip wget \
         zsh git vim sudo \
         openssh-server \
