@@ -11,6 +11,7 @@
 *.deb
 
 build/
+buildx/
 cmake-build-debug/
 thirdparty/
 build_thirdparty.sh
@@ -18,4 +19,3 @@ build_thirdparty.sh
 __pycache__
 log/*
 !log/.gitkeep
-

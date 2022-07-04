@@ -4,3 +4,18 @@
 [submodule "cpplib/googletest"]
 	path = cpplib/googletest
 	url = git@gitee.com:haha-web/googletest.git
+[submodule "cpplib/glog"]
+	path = cpplib/glog
+	url = git@gitee.com:haha-web/glog.git
+[submodule "cpplib/setup"]
+	path = cpplib/setup
+	url = git@github.com:minhanghuang/setup.git
+[submodule "cpplib/jsoncpp"]
+	path = cpplib/jsoncpp
+	url = git@gitee.com:haha-web/jsoncpp.git
+[submodule "cpplib/yaml-cpp"]
+	path = cpplib/yaml-cpp
+	url = git@gitee.com:haha-web/yaml-cpp.git
+[submodule "cpplib/nlohmannjson"]
+	path = cpplib/nlohmannjson
+	url = git@gitee.com:haha-web/nlohmannjson.git
