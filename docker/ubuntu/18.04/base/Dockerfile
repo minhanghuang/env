@@ -17,6 +17,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --create-home --no-log-init --shell /bin/zsh ${user} \
     && adduser ${user} sudo && echo "${user}:123" | chpasswd && echo "root:123" | chpasswd \
+    && su - ${user} -c "pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /opt/dockerfile/requirements.txt" \
     && su - ${user} -c "sh /opt/dockerfile/oh-my-zsh-install.sh" \
     && su - ${user} -c "sh /opt/dockerfile/oh-my-zsh-plugin-install.sh"
 
