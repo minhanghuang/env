@@ -4,18 +4,20 @@ COPY sources.list /etc/apt/sources.list
 COPY sshd_config /etc/ssh/sshd_config
 COPY oh-my-zsh-install.sh /opt/dockerfile/oh-my-zsh-install.sh
 COPY oh-my-zsh-plugin-install.sh /opt/dockerfile/oh-my-zsh-plugin-install.sh
+COPY requirements.txt /opt/dockerfile/requirements.txt
 
 ARG user=trunk
 
 RUN apt-get update \
     && apt install -y \
         libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools\
-        build-essential supervisor htop glances ntpdate chrony libtool \
-        python-pip python3-pip curl unzip wget python-catkin-tools \
+        supervisor htop glances ntpdate chrony libtool clang llvm tig libunwind-dev gdb \
+        python3-pip curl unzip wget \
         zsh git vim sudo openssh-server \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --create-home --no-log-init --shell /bin/zsh ${user} \
     && adduser ${user} sudo && echo "${user}:123" | chpasswd && echo "root:123" | chpasswd \
+    && su - ${user} -c "pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /opt/dockerfile/requirements.txt" \
     && su - ${user} -c "sh /opt/dockerfile/oh-my-zsh-install.sh" \
     && su - ${user} -c "sh /opt/dockerfile/oh-my-zsh-plugin-install.sh"
 
