@@ -10,9 +10,12 @@ do
     echo "$file/buildx"
     if [ -d "$file/buildx" ]
     then
-      rm -rf $file/buildx
+      # rm -rf $file/buildx
+      echo "已编译"
+    else
+      then
+      mkdir $file/buildx
     fi
-    mkdir $file/buildx
     cd $file/buildx
     cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/opt/owner ..
     make -j4
