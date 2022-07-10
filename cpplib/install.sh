@@ -13,7 +13,7 @@ do
       # rm -rf $file/buildx
       echo "已编译"
     else
-      then
+    # then
       mkdir $file/buildx
     fi
     cd $file/buildx
