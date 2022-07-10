@@ -11,7 +11,7 @@ ARG user=trunk
 RUN apt-get update \
     && apt install -y \
         libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools\
-        supervisor htop glances ntpdate chrony libtool clang llvm tig libunwind-dev gdb \
+        supervisor htop glances ntpdate chrony libtool clang llvm tig tree libunwind-dev gdb \
         python3-pip curl unzip wget \
         zsh git vim sudo openssh-server \
     && rm -rf /var/lib/apt/lists/* \
