@@ -2,6 +2,7 @@
   co = checkout
   cob = checkout -b
   coo = !git fetch && git checkout
+  d = diff
   br = branch
   brd = branch -d
   s = status
