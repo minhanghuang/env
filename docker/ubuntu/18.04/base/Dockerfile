@@ -10,7 +10,7 @@ ARG user=trunk
 RUN apt-get update \
     && apt install -y \
         libgsl-dev cmake make g++ pkg-config autoconf automake iputils-ping net-tools \
-        build-essential supervisor htop ntpdate chrony libtool clang llvm tig tree libunwind-dev \
+        build-essential supervisor htop ntpdate chrony libtool clang clang-format llvm tig tree libunwind-dev \
         python-pip python3-pip curl unzip wget \
         zsh git vim sudo \
         openssh-server \
