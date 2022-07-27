@@ -8,4 +8,5 @@ brew install neovim
 brew install node 
 brew install yarn 
 brew install clang-format 
+brew install gdb 
 
