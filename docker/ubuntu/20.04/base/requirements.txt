@@ -1,0 +1,3 @@
+PyYAML==6.0
+protobuf==3.13.0
+tornado==5.1.1
