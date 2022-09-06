@@ -109,9 +109,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim='nvim'
+
 alias vm-u18='ssh trunk@vm-u18'
 alias vm-u16='ssh trunk@vm-u16'
-alias dk-u18='ssh -p 6789 trunk@127.0.0.1'
-alias dk-u16='ssh -p 6788 trunk@127.0.0.1'
+alias vm-u20='ssh trunk@vm-u20'
+
+alias dk-u16='ssh -p 6789 trunk@127.0.0.1'
+alias dk-u18='ssh -p 6788 trunk@127.0.0.1'
+alias dk-u20='ssh -p 6787 trunk@127.0.0.1'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
