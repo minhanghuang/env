@@ -9,3 +9,6 @@ cp pip.conf ~/.pip/
 
 # zsh
 cp .zshrc ~
+
+# C++ clang-format
+cp .clang-format ~
