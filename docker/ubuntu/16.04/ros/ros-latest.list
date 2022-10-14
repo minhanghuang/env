@@ -1,1 +1,1 @@
-deb http://mirrors.ustc.edu.cn/ros/ubuntu/ xenial main
+deb https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ xenial main

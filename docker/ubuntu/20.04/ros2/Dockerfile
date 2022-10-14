@@ -11,4 +11,3 @@ RUN apt update \
   && sudo apt install -y ros-foxy-desktop python3-argcomplete python3-colcon-common-extensions python3-vcstool \
   && rm -rf /var/lib/apt/lists/* \
 
-
