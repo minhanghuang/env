@@ -9,4 +9,5 @@ brew install node
 brew install yarn 
 brew install clang-format 
 brew install gdb 
+brew install libtool
 

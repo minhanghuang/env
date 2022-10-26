@@ -15,6 +15,7 @@ else
   exit 8
 fi
 
+./base.pylib.sh
 ./zsh.sh
 ./zsh.plugin.sh
 

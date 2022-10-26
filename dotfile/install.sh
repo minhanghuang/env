@@ -12,3 +12,7 @@ cp .zshrc ~
 
 # C++ clang-format
 cp .clang-format ~
+
+# cmake-format (pip3 install cmakelang)
+cp .cmake-format ~
+
