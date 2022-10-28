@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM owner:16.04
 
 COPY ros-latest.list /etc/apt/sources.list.d/ros-latest.list
 
