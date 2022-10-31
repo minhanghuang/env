@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# git alias
+# git
 cp .gitconfig ~
+cp .gitconfig_trunk ~
+cp .gitconfig_github ~
+cp .gitconfig_gitee ~
 
 # pip
 mkdir -p ~/.pip/

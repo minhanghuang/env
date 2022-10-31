@@ -30,3 +30,13 @@
   pop = stash pop
   apply = stash apply
   rl = reflog
+
+[includeIf "gitdir:~/work/code/trunk/"]
+    path = ~/.gitconfig_trunk
+
+[includeIf "gitdir:~/work/code/github/"]
+    path = ~/.gitconfig_github
+
+[includeIf "gitdir:~/work/code/gitee/"]
+    path = ~/.gitconfig_gitee
+
