@@ -19,3 +19,6 @@ cp .clang-format ~
 # cmake-format (pip3 install cmakelang)
 cp .cmake-format ~
 
+# HHKB 
+cp hhkb.json ~/.config/karabiner/assets/complex_modifications
+
