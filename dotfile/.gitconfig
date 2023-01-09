@@ -1,6 +1,10 @@
 [core]
   editor = vim
 
+[user]
+  name = minhanghuang
+  email = job@minhang.me
+
 [alias]
   co = checkout
   cob = checkout -b
@@ -40,3 +44,6 @@
 [includeIf "gitdir:~/work/code/gitee/"]
     path = ~/.gitconfig_gitee
 
+[safe]
+    directory = /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
+    directory = /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
