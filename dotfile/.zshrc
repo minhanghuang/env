@@ -108,6 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export LANG=C.UTF-8
+
 alias vim='nvim'
 
 alias vm-u18='ssh trunk@vm-u18'
