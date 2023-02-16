@@ -122,3 +122,5 @@ alias dk-u20='ssh -p 6787 trunk@127.0.0.1'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+
