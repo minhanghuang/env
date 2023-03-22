@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # git
 cp .gitconfig ~
@@ -12,6 +12,7 @@ cp pip.conf ~/.pip/
 
 # zsh
 cp .zshrc ~
+cp .zsh_history ~
 
 # C++ clang-format
 cp .clang-format ~
@@ -19,6 +20,7 @@ cp .clang-format ~
 # cmake-format (pip3 install cmakelang)
 cp .cmake-format ~
 
-# HHKB 
+# HHKB
+mkdir -p ~/.config/karabiner/assets/complex_modifications
 cp hhkb.json ~/.config/karabiner/assets/complex_modifications
 
