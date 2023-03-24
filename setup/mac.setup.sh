@@ -12,4 +12,4 @@ brew install gdb
 brew install libtool
 brew install autojump
 brew install lz4
-
+brew install nginx
