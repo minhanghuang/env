@@ -10,6 +10,7 @@ if [ "$osName" == "Darw" ] # Darwin
 elif [ "$osName" == "Linu" ] # Linux
   then
     echo "GNU/Linux"
+    ./ubuntu.libs.sh
 else
   echo "unknown os :" $osName
   exit 8
