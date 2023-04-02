@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 brew install pkg-config
 brew install --HEAD universal-ctags
@@ -13,3 +13,7 @@ brew install libtool
 brew install autojump
 brew install lz4
 brew install nginx
+
+sudo npm config set http://registry.npmmirror.com
+sudo yarn config set registry http://registry.npmmirror.com
+

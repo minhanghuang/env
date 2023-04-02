@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Google Translate
 echo "# Google Translate" >>  /etc/hosts

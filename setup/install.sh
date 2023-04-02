@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 uNames=`uname -s`
 osName=${uNames: 0: 4}
