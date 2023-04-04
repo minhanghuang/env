@@ -1,0 +1,13 @@
+version: '3'
+services:
+  u20:
+    image: hmh:ubuntu20.04-release-2.1.0
+    container_name: u20
+    ports:
+      - "32000:22"
+      - "32001:9990"
+      - "32002:9991"
+      - "32003:9992"
+      - "32004:9993"
+    command: tail -f /dev/null
+

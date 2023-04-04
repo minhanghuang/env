@@ -1,0 +1,13 @@
+version: '3'
+services:
+  u18:
+    image: hmh:ubuntu18.04-release-1.6.0
+    container_name: u18
+    ports:
+      - "31000:22"
+      - "31001:9990"
+      - "31002:9991"
+      - "31003:9992"
+      - "31004:9993"
+    command: tail -f /dev/null
+
