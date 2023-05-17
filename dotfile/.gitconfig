@@ -6,6 +6,7 @@
   email = job@minhang.me
 
 [alias]
+  o = checkout
   co = checkout
   cob = checkout -b
   coo = !git fetch && git checkout
