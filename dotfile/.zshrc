@@ -108,7 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 中文 打开
 # export LANG=C.UTF-8
+
+# vim dap 打开
 export LANG=en_US.UTF-8
 
 alias vim='nvim'
@@ -120,8 +123,7 @@ alias vm-u20='ssh trunk@vm-u20'
 alias dk-u16='ssh -p 6789 trunk@127.0.0.1'
 alias dk-u18='ssh -p 6788 trunk@127.0.0.1'
 alias dk-u20='ssh -p 6787 trunk@127.0.0.1'
+alias infra='ssh hmh@10.11.1.15'
+alias infra-du18='ssh -p 31000 trunk@10.11.1.15'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-
