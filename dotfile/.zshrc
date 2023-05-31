@@ -127,3 +127,16 @@ alias infra='ssh hmh@10.11.1.15'
 alias infra-du18='ssh -p 31000 trunk@10.11.1.15'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+proxy_export() {
+    export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+    echo "Proxy settings enabled."
+}
+
+proxy_unset() {
+    unset https_proxy
+    unset http_proxy
+    unset all_proxy
+    echo "Proxy settings disabled."
+}
+
