@@ -8,7 +8,7 @@ cp .gitconfig_gitee ~
 
 # pip
 mkdir -p ~/.pip/
-cp pip.conf ~/.pip/
+cp -f pip.conf ~/.pip/
 
 # zsh
 cp .zshrc ~
