@@ -140,3 +140,8 @@ proxy_unset() {
     echo "Proxy settings disabled."
 }
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  # 适配Ubuntu
+  alias nproc='sysctl -n hw.logicalcpu'
+fi
+
