@@ -16,7 +16,7 @@ RUN apt update \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --create-home --no-log-init --shell /bin/zsh ${user} \
     && adduser ${user} sudo && echo "${user}:123" | chpasswd && echo "root:123" | chpasswd \
-    && su - ${user} -c "git clone https://gitee.com/haha-web/env.git ~/env" \
+    && su - ${user} -c "git clone https://gitee.com/minhanghuang/env.git ~/env" \
     && su - ${user} -c "cd ~/env/dotfile/ && ./install.sh && cd ~/env/setup && ./zsh.sh"
 
 

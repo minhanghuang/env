@@ -44,7 +44,7 @@ custom_zsh=${ZSH:+yes}
 ZSH=${ZSH:-~/.oh-my-zsh}
 REPO=${REPO:-ohmyzsh/ohmyzsh}
 #REMOTE=${REMOTE:-https://github.com/${REPO}.git}
-REMOTE=${REMOTE:-https://gitee.com/haha-web/oh-my-zsh.git}
+REMOTE=${REMOTE:-https://gitee.com/minhanghuang/oh-my-zsh.git}
 BRANCH=${BRANCH:-master}
 
 # Other options
