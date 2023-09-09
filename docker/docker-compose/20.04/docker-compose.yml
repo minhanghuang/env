@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  u20:
+  u20: # 服务名(唯一)
     image: hmh:ubuntu20.04-release-2.1.3
-    container_name: u20
+    container_name: u20 # 容器名(唯一)
     ports:
         # 320xx
         # 3200x: 容器1
