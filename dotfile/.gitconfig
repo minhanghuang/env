@@ -1,5 +1,6 @@
 [core]
   editor = vim
+  quotepath = false
 
 [user]
   name = minhanghuang
