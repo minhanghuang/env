@@ -49,3 +49,7 @@
 [safe]
     directory = /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
     directory = /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
+
+[oh-my-zsh]
+	hide-dirty = 1
+	hide-status = 1
