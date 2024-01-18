@@ -145,3 +145,4 @@ if [[ "$(uname)" == "Darwin" ]]; then
   alias nproc='sysctl -n hw.logicalcpu'
 fi
 
+export PATH=$PATH:~/.local/bin
