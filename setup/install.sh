@@ -16,7 +16,7 @@ else
   exit 8
 fi
 
-./base.pylib.sh
+pip3 install -r requirement.txt
+
 ./zsh.sh
 ./zsh.plugin.sh
-
