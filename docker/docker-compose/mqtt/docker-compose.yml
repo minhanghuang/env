@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mqtt:
+    image: emqx/emqx:4.4.4
+    container_name: mqtt
+    ports:
+      - "1883:1883"
+      - "8081:8081"
+      - "8083:8083"
+      - "8084:8084"
+      - "8883:8883"
+      - "18083:18083"
+    env_file:
+      - .env
+    volumes:
+      - ${VOLUMES1}
+    # command: tail -f /dev/null // 不能使用后台运行
