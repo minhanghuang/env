@@ -2,6 +2,9 @@
 
 uNames=`uname -s`
 osName=${uNames: 0: 4}
+
+./node.js.sh
+
 if [ "$osName" == "Darw" ] # Darwin
   then
     echo "Mac OS X"
@@ -16,7 +19,5 @@ else
   exit 8
 fi
 
-pip3 install -r requirement.txt
-
 ./zsh.sh
-./zsh.plugin.sh
+# ./zsh.plugin.sh
