@@ -2,13 +2,27 @@
 
 set -e
 
-sudo apt update
-sudo apt install -y \
-         build-essential openssh-server net-tools libtool sudo iputils-ping libgsl-dev ntpdate python2.7-dev python3-pip axel silversearcher-ag lsof \ # base
-         pkg-config autoconf automake cmake make g++ gdb cgdb clang clang-format llvm bear \ # C++
-         htop chrony tig tree libunwind-dev curl unzip wget \ # tools
-         zsh git vim nodejs npm yarn ripgrep universal-ctags global neofetch cppman \ # plugin
-         supervisor nginx \ # proxy
+apt update
+
+# install base
+apt install -y \
+  build-essential openssh-server net-tools libtool sudo iputils-ping libgsl-dev ntpdate \
+  python2.7-dev python3-pip python3-venv axel silversearcher-ag lsof unzip
+
+# install C++ dependence
+apt install -y \
+  pkg-config autoconf automake cmake make g++ gdb cgdb clang clang-format llvm bear
+
+# install tools
+apt install -y \
+  htop chrony tig tree libunwind-dev curl unzip wget
+
+# install pulgin
+apt install -y \
+  zsh git vim nodejs npm yarn ripgrep universal-ctags global neofetch cppman
+
+# install porxy
+apt install -y supervisor nginx
 
 # ripgrep: 全文搜索工具
 # universal-ctags global: 源代码导航和标签生成的工具

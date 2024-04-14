@@ -18,14 +18,14 @@ if [ "$osName" == "Darw" ] # macOS
   then
     echo "Mac OS X"
     brew install yarn npm
-    sudo npm config set http://registry.npmmirror.com
-    sudo yarn config set registry http://registry.npmmirror.com
+    npm config set http://registry.npmmirror.com
+    yarn config set registry http://registry.npmmirror.com
 elif [ "$osName" == "Linu" ] # Linux
   then
     echo "GNU/Linux"
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    sudo apt update && sudo apt install -y npm yarn
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+    apt update && apt install -y npm yarn
     npm config set https://registry.npmmirror.com
     yarn config set registry https://registry.npmmirror.com
 else
