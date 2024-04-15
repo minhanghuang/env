@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 15.4.0
 nvm alias default 15.4.0
 
-### install npm yarn
+### install npm
 if [ "$osName" == "Darw" ] # macOS
   then
     echo "Mac OS X"
@@ -23,11 +23,8 @@ if [ "$osName" == "Darw" ] # macOS
 elif [ "$osName" == "Linu" ] # Linux
   then
     echo "GNU/Linux"
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-    apt update && apt install -y npm yarn
+    apt update && apt install -y npm
     npm config set https://registry.npmmirror.com
-    yarn config set registry https://registry.npmmirror.com
 else
   echo "unknown os :" $osName
   exit 8
