@@ -20,3 +20,4 @@ fi
 ./node.js.sh
 ./zsh.sh
 ./zsh.plugin.sh
+./lazygit.sh
