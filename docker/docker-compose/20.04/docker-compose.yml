@@ -5,6 +5,7 @@ services:
   u20-1: # 服务名(唯一)
     image: ${IMAGE}
     container_name: u20 # 容器名(唯一)
+    hostname: mac-u20
     ports:
         # 320xx
         # 3200x: 容器1
@@ -30,6 +31,7 @@ services:
   u20-2:
     image: ${IMAGE}
     container_name: u20-2
+    hostname: mac-u20-2
     env_file:
       - .env
     ports:
