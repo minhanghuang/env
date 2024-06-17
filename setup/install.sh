@@ -21,3 +21,4 @@ fi
 ./zsh.sh
 ./zsh.plugin.sh
 ./lazygit.sh
+./tmux.sh
