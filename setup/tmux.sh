@@ -35,4 +35,18 @@ cd tmux-${TMUX_VERSION}
 
 cd .. && rm -rf tmux-${TMUX_VERSION} tmux-${TMUX_VERSION}.tar.gz
 
+## 安装tmux tpm
+TPM_DIR="$HOME/.tmux/plugins/tpm"
+if [ -d "$TPM_DIR" ]; then
+    if [ -z "$(ls -A $TPM_DIR)" ]; then
+        echo "Directory exists but is empty. Cloning TPM..."
+        git clone https://github.com/tmux-plugins/tpm $TPM_DIR
+    else
+        echo "Directory is not empty. No action needed."
+    fi
+else
+    echo "Directory does not exist. Cloning TPM..."
+    git clone https://github.com/tmux-plugins/tpm $TPM_DIR
+fi
+
 echo "tmux ${TMUX_VERSION} 安装完成！"
