@@ -38,13 +38,14 @@
   rl = reflog
 
 [includeIf "gitdir:~/work/code/trunk/"]
-    path = ~/.gitconfig_trunk
+    path = ~/.config/git_config/trunk.config
 
 [includeIf "gitdir:~/work/code/github/"]
     path = ~/.gitconfig_github
+    path = ~/.config/git_config/github.config
 
 [includeIf "gitdir:~/work/code/gitee/"]
-    path = ~/.gitconfig_gitee
+    path = ~/.config/git_config/gitee.config
 
 [safe]
     directory = /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
