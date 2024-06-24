@@ -11,7 +11,7 @@ if [ "$osName" == "Linu" ]
   then
     echo "GNU/Linux"
     sudo apt remove tmux
-    sudo apt install -y bison flex
+    sudo apt install -y bison flex libevent-dev libncurses5-dev
 fi
 
 installed_tmux_version=$(tmux -V 2>/dev/null | sed 's/tmux //')
