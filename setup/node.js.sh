@@ -23,7 +23,7 @@ if [ "$osName" == "Darw" ] # macOS
 elif [ "$osName" == "Linu" ] # Linux
   then
     echo "GNU/Linux"
-    apt update && apt install -y npm
+    sudo apt update && sudo apt install -y npm
     npm config set https://registry.npmmirror.com
 else
   echo "unknown os :" $osName
