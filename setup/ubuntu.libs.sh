@@ -11,11 +11,12 @@ sudo apt install -y \
 
 # install C++ dependence
 sudo apt install -y \
-  pkg-config autoconf automake cmake make g++ gdb cgdb clang clang-format llvm bear valgrind
+  pkg-config autoconf automake cmake make g++ gdb cgdb clang clang-format ninja-build \
+  llvm bear valgrind
 
 # install tools
 sudo apt install -y \
-  htop chrony tig tree libunwind-dev curl unzip wget baobab
+  htop chrony tig tree libunwind-dev curl unzip wget baobab xclip
 
 # install pulgin
 sudo apt install -y \
@@ -34,3 +35,4 @@ sudo apt install -y language-pack-zh-hans
 # neofetch: 查看系统信息
 # cppman: 查看C++ 98/11/14/17/20 manual pages
 # valgrind: 查看C++程序内存泄露工具
+# xclip: 剪切板工具
