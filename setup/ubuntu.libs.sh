@@ -7,7 +7,7 @@ sudo apt update
 # install base
 sudo apt install -y \
   build-essential openssh-server net-tools libtool sudo iputils-ping libgsl-dev ntpdate \
-  python2.7-dev python3-pip python3-venv axel silversearcher-ag lsof unzip nfs-common libevent-dev
+  python3-pip python3-venv axel silversearcher-ag lsof unzip nfs-common libevent-dev
 
 # install C++ dependence
 sudo apt install -y \
